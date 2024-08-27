@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header_top_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.header_top_block h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 350;
+    font-size: 50px;
+    color: rgb(0, 136, 162);
+    margin-left: 40px;
+}
+
+.header_top_block img {
+    width: 120px;
+    height: 120px
+}
+
+#toggle {
+    /* opacity: 0; */
+    display: none;
+}
+
+.btn {
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.btn span,
+.btn span::before,
+.btn span::after {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #0088A2;
+    transition: .3s;
+}
+
+.btn span::before {
+    content: '';
+    top: -8px;
+}
+
+.btn span::after {
+    content: '';
+    top: 8px;
+}
+
+.burger_menu {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    padding: 80px 0;
+    background-color: #fff;
+    list-style: none;
+    text-align: center;
+    transition: .5s;
+    z-index: 1;
+}
+
+.burger_menu_item {
+    display: block;
+    padding: 15px 20px;
+    color: #0088A2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    width: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.burger_menu_item:hover {
+    background-color: #0088A2;
+}
+
+#toggle:checked~.btn span {
+    transform: rotate(45deg);
+}
+
+
+#toggle:checked~.btn span::before {
+    top: 0;
+    transform: rotate(-90deg);
+}
+
+#toggle:checked~.btn span::after {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#toggle:checked~.burger_menu {
+    visibility: visible;
+    left: 0;
+
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    background: #808080;
+}
+
+.menu li {
+    flex: 0 1 20%;
+    text-align: center;
+}
+
+.menu_item {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    transition: .3s;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 25px;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+
+.menu_item:hover {
+    background-color: #0088A2;
+}
+
+/* main */
+.images {
+    display: flex;
+    width: 95%;
+    margin: 50px auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.quest_card {
+    flex: 0 1 30%;
+    position: relative;
+}
+
+.quest_card img {
+    width: 100%;
+}
+
+.quest_card p {
+    position: absolute;
+    top: 41%;
+    left: 0;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.main_top {
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 45 332 17 325;
+
+
+}
+
+.main_top h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    color: rgb(0, 136, 162);
+    margin-top: 120px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.images_wrapper {
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video {
+    width: 100%;
+}
+
+.play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.photos {
+    display: flex;
+    width: 85%;
+    height: 490px;
+    margin: 80px 200px;
+    margin-bottom: 95px;
+    /* border: 2px solid red; */
+}
+
+.photos_5 {
+    flex: 0 1 20%;
+    position: relative;
+}
+
+.photos_5 img {
+    width: 100%;
+}
+
+#photo1 {
+
+    width: 258px;
+    height: 455px;
+}
+
+#photo2 {
+    margin-top: 38px;
+    top: 0;
+    right: 40px;
+}
+
+#photo3 {
+    top: 0;
+    right: 75px;
+}
+
+#photo4 {
+    top: 38px;
+    right: 120px;
+}
+
+#photo5 {
+    top: 0;
+    right: 170px;
+}
+
+
+.about_project {
+    text-align: center;
+    /* border: 2px solid red;    */
+    width: 65%;
+    margin: 150px auto;
+}
+
+.about_project h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 55px;
+    font-weight: 400;
+    color: #0088A2;
+}
+
+.text {
+    text-align: center;
+    width: 90%;
+    margin: 44px auto;
+}
+
+.text p {
+    font-family: "Roboto", sans-serif;
+    color: #707070;
+    font-weight: 400;
+    font-size: 30px;
+
+}
+
+.downoload {
+    text-align: center;
+    margin: 100px;
+}
+
+.downoload h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 55px;
+    color: #0088A2;
+}
+
+.for_getting {
+    display: flex;
+    width: 85%;
+    margin: 70px auto;
+    /* border: 2px solid red; */
+    position: relative;
+
+
+}
+
+#android {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 1px;
+    left: 150px;
+}
+
+#QR {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    top: 23px;
+    right: 190px;
+}
+
+.About_course {
+    align-items: center;
+    width: 60%;
+    /* border: 2px solid red; */
+    margin: 100px auto;
+}
+
+.information {
+    text-align: center;
+    margin-top: 270px;
+
+
+}
+
+.information p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #707070;
+    font-weight: 400;
+}
+
+.connection {
+
+    justify-content: center;
+    background: #0088A2;
+    height: 550px;
+    border: 2px solid #0088A2;
+}
+
+.connection_1 {
+    text-align: center;
+    margin-top: 55px;
+
+}
+
+.connection_1 h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+
+
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+
+
+
+}
+
+.apps img {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    /* margin-right: 50px; */
+    align-items: center;
+}
+
+.for_connection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.for_connection h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    margin: 55px auto;
+}
+
+.information_connection {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex: 0 1 33%;
+    /* border: 2px solid red; */
+
+}
+
+.information_connection h5 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+}

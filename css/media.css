@@ -1,0 +1,188 @@
+@media screen and (max-width: 430px) {
+    .header_top_block {
+        max-width: 430px;
+    }
+
+    .header_top_block {
+        flex-direction: column;
+        background-color: rgb(229, 229, 229);
+        margin: 0;
+    }
+
+    .header_top_block img {
+        margin-top: 8px;
+    }
+
+    .header_top_block h1 {
+        font-size: 18px;
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: 8px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+
+    .images {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .quest_card {
+        width: 330px;
+        height: 80px;
+    }
+
+    .main_top {
+        margin-top: 25px;
+    }
+
+
+    .play {
+        width: 40px;
+        height: 40px;
+    }
+
+    .images_wrapper {
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+
+    .video {
+        width: 345px;
+        height: 196px;
+
+
+    }
+
+    .main_top h1 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .photos {
+        display: none;
+    }
+
+    .about_project {
+        padding: 15px;
+    }
+
+    .about_project h1 {
+        font-size: 26px;
+        margin-top: -130px;
+    }
+
+    .text {
+        margin-top: 20px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
+
+    .downoload {
+        margin: 0 auto;
+        margin-bottom: 0px;
+
+    }
+
+    .downoload h1 {
+        font-size: 26px;
+        margin-top: -141px;
+    }
+
+    .images_wrapper .for_getting {
+        margin: 23px auto;
+    }
+
+    #android {
+        width: 130px;
+        height: 101px;
+        top: 1px;
+        left: 47px;
+
+    }
+
+    #QR {
+        width: 87px;
+        height: 87px;
+        top: 1px;
+        right: 66px;
+    }
+
+    .About_course {
+        width: 330px;
+        height: 55px;
+
+    }
+
+
+    .information p {
+        font-size: 15px;
+        margin-top: -135px;
+    }
+
+
+    .connection_1 {
+        margin-top: 15px;
+    }
+
+    .connection_1 h1 {
+        font-size: 26px;
+    }
+
+    .apps {
+        gap: 36px;
+    }
+
+    .apps img {
+        width: 34px;
+        height: 34px;
+        margin-right: 0;
+        margin-top: 4px;
+
+    }
+
+    .for_connection {
+        flex-direction: column;
+        /* position: relative; */
+
+    }
+
+    .for_connection h2 {
+        font-size: 20px;
+        margin-top: 13px;
+    }
+
+    .information_connection {
+        flex-direction: column;
+
+    }
+
+    .information_connection h5 {
+        font-size: 12px;
+        /* position: fixed; */
+        margin-top: -240px;
+        width: 222px;
+        height: 14px;
+
+    }
+}
+
+@media screen and (min-width: 431px) {
+    .nav_burger {
+        display: none;
+    }
+
+    .nav_burger {}
+
+
+
+
+}
